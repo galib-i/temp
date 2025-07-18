@@ -25,5 +25,6 @@ func init() {
 
 // Entrypoint
 func Handler(w http.ResponseWriter, r *http.Request) {
+	// log.Println("GITHUB_TOKEN set:", os.Getenv("GITHUB_TOKEN") != "")
 	app.ServeHTTP(w, r)
 }
